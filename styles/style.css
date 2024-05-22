@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh; /* 100% view height -> Complete height of page */
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+button {
+    background-color: lightcoral;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+
+
+button:hover {
+    background-color: white;
+    color: lightcoral;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.chat{
+    margin-top: 20px;
+    margin-left: 45px;
+}
+
+header {
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.logo {
+    /* font-weight: 700;
+    font-size: 30px; */
+    width: 200px;
+    cursor: pointer;
+    padding-top: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+ }
+
+nav ul li {
+    font-weight: 300;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0s ease; /* Add transition for smooth effect */
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: 300; /* Keep original font-weight */
+    color: orangered; /* Change color on hover */
+    text-shadow: 0 0 1px currentColor; /* Add a subtle text-shadow to mimic bold */
+  }
+  
+
+.search {
+    display: flex;
+    gap: 30px;
+}
+
+input {
+    padding: 4px 10px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-left {
+    margin-left: 70px;
+    width: 500px;
+}
+
+h1{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+span{
+    color: orangered;
+    font-weight: 600;
+    
+}
+
+.name{
+    font-size: 30px;
+}
+
+.hero-right {
+    margin-right: 60px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer{
+    margin-left: 250px;
+    font-size: small;
+
+}
+
+.logos{
+    display: flex;
+    margin-right: 250px;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.logos i:hover{
+    outline: auto;
+}
