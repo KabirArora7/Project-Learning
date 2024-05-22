@@ -2,16 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 body {
+    position: relative; /* Position relative for overlay */
+    overflow: hidden;
     height: 100vh; /* 100% view height -> Complete height of page */
     width: 100vw;
-    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url('https://images.pexels.com/photos/5212329/pexels-photo-5212329.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Dark overlay */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Adjust opacity for darkness */
+    z-index: -1; /* Behind other content */
 }
 
 li {
@@ -55,14 +71,14 @@ nav {
     width: 100%;
     align-items: center;
     margin-top: -50px;
+    padding-top: 50px;
 }
 
 .logo {
     /* font-weight: 700;
     font-size: 30px; */
-    width: 200px;
+    width: 100px;
     cursor: pointer;
-    padding-top: 20px;
 
 }
 
@@ -85,7 +101,7 @@ nav ul li a {
   nav ul li a:hover {
     text-decoration: underline;
     font-weight: 300; /* Keep original font-weight */
-    color: orangered; /* Change color on hover */
+    color: lightcoral; /* Change color on hover */
     text-shadow: 0 0 1px currentColor; /* Add a subtle text-shadow to mimic bold */
   }
   
@@ -117,7 +133,7 @@ h1{
 }
 
 span{
-    color: orangered;
+    color: lightcoral;
     font-weight: 600;
     
 }
@@ -137,6 +153,7 @@ footer {
 
 .left-footer{
     margin-left: 250px;
+    margin-top: 30px;
     font-size: small;
 
 }
@@ -144,6 +161,7 @@ footer {
 .logos{
     display: flex;
     margin-right: 250px;
+    padding: 20px;
     gap: 15px;
     cursor: pointer;
 }
